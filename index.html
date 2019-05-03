@@ -1,154 +1,474 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <!--[if lt IE 9]>
+        <script src="/js/html5shiv.js"></script>
+    <![endif]-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Plane</title>
-
-    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="libs/awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/style.css">
-
+    <title>HTML5, HTML FORM, CSS3</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+    <link rel="stylesheet" href="./css/style.css"> 
+    <!-- link  style css luôn để cuối vì trình duyệt đọc từ trên xuống dưới -->
+    <link rel="stylesheet" href="./css/respon_768.css">
 </head>
-
 <body>
-    <header class="header">
-        <div class="header-mobile">
-            <img src="./images/logo-mobile.png" alt="">
-            <div id="toggle">
-                <div class="one"></div>
-                <div class="two"></div>
-                <div class="three"></div>
-            </div>
+    <!-- navbar -->
+    <nav class="myNarBar">
+        <div class="myNarBar_content">
+            <h1>BAKE</h1>
+            <ul>
+                <li class="active"><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SERVICE</a></li>
+                <li><a href="">GALLERY</a></li>
+                <li><a href="">CLIENT</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
         </div>
-        <div class="container header-web">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 hidden-xs logo">
-                    <img src="./images/logo.png" alt="">
-                </div>
-                <div class="col-md-6 col-md-6 col-sm-6 hidden-xs menu">
-                    <ul>
-                        <li><a href="#">work</a></li>
-                        <li><a href="#">company</a></li>
-                        <li><a href="#">recruit</a></li>
-                        <li><a href="#">contact us</a></li>
-                    </ul>
-                </div>
+    </nav>
+    <!-- cover -->
+    <section class="cover">
+        <h1>BEST BAKE HERE</h1>
+        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, impedit?</P>
+        <button class="btn">LEAR MORE</button>
+    </section>
+    <!-- traditional -->
+    <section class="row">
+        <div class="item traditional">
+            <h2>traditional</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, alias?</p>
+        </div>
+        <div class="image"></div>
+        <div class="item createtivity">
+            <h2>createtivity</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, impedit.</p>
+        </div>
+    </section>
+    <!-- what we Bake -->
+    <section class="row1">
+        <div class="item1 Best">
+            <h2>What We Bake Best For You</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, asperiores.</p>
+        </div>
+        <div class="image"></div>
+        <div class="item1 Quality">
+            <h2>Quality</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, corporis.</p>
+        </div>
 
+    </section>
+    <!-- Tasty Cakes -->
+    <section class="row2">
+            <div class="image"></div>
+            <div class="TastyCakes">
+                <h2>Tasty Cakes</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, ex.</p>  
+            </div>
+            <div class="image3"></div>
+    </section>
+    <!-- static -->
+    <section class="static wow zoomInUp">
+        <div class="static_content">
+            <div class="static_item coffee">
+                <p class="counterUp">3500</p>
+                <p>Coffee</p>
+            </div>
+            <div class="static_item client">
+                    <p class="counterUp">650</p>
+                    <p>Happy Client</p>
+            </div>
+            <div class="static_item experience">
+                    <p class="counterUp">10</p>
+                    <p>experience</p>
+            </div>
+            <div class="static_item worker">
+                    <p class="counterUp">1010</p>
+                    <p>worker</p>
             </div>
         </div>
-    </header>
-    <section class="wrapper">
-        <div class="container">
-            <div class="main-mobile">
-                <img src="./images/main.jpg" alt="">
-            </div>
-            <div class="row slider">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./images/slider1.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./images/slider2.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./images/slider3.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./images/slider4.jpg" class="d-block w-100" alt="...">
-                        </div>
+    </section>
+    <!-- service -->
+    <section class="service">
+        <div class="service_content">
+            <h1>OUR SERVICE</h1>
+            <div class="service_items">
+                <div class="service_item service_one">
+                    <div class="circle">
+                        <i class="fa fa-adjust"></i>
+                    </div>
+                    <div class="content">
+                        <h2>Tasty Cake</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, perferendis!</p>
+                        <button class="btn">Learn more</button>
+                    </div>
+                </div>
+                <div class="service_item service_two">
+                    <div class="circle">
+                        <i class="fa fa-snowflake-o"></i>
+                    </div>
+                    <div class="content">
+                        <h2>Creativity</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, perferendis!</p>
+                        <button class="btn">Learn more</button>
+                    </div>
+                </div>
+                <div class="service_item service_three">
+                    <div class="circle">
+                        <i class="fa fa-pie-chart"></i>
+                    </div>
+                    <div class="content">
+                        <h2>Tradition</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, perferendis!</p>
+                        <button class="btn">Learn more</button>
+                    </div>
+                </div>
+                <div class="service_item service_four">
+                    <div class="circle">
+                        <i class="fa fa-slideshare"></i>
+                    </div>
+                    <div class="content">
+                        <h2>Quality</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, perferendis!</p>
+                        <button class="btn">Learn more</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row about">
-                <div class="col-md-3 item">
-                    <a href="">
-                        <img src="./images/about.jpg" alt="">
-                        <h3>about</h3>
-                    </a>
-                </div>
-                <div class="col-md-3 item">
-                    <a href="">
-                        <img src="./images/recruit.jpg" alt="">
-                        <img src="./images/overlay.jpg" class="overlay" alt="">
-                        <div class="over">
-                            <h3>recruit</h3>
-                            <h5>open recruit</h5>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 item">
-                    <a href="">
-                        <img src="./images/brochure.jpg" alt="">
-                        <h3>brochure</h3>
-                    </a>
-                </div>
-                <div class="col-md-3 item">
-                    <a href="">
-                        <img src="./images/service.jpg" alt="">
-                        <div class="service">
-                            <h3>service</h3>
-                            <h5>what we do</h5>
-                        </div>
-                    </a>
-                </div>
-            </div>
+    </section>
+    <!-- our GALLERY -->
+    <section class="gallary">
+        <div class="gallery_content">
+            <h1>OUR GALLERY</h1>
         </div>
-        <div class="container works">
-            <div class="title">
-                <h3>works</h3>
-                <hr style="width: 24px; height: 1px; color: #4d4d4f;" />
-                <h5>plane portofolio</h5>
+        <div class="gallery_items">
+            <div class="gallery_item gallery_one">
+                <div class="overlay">
+                    <h3>OUR GALLERY</h3>
+                    <div class="underline"></div>
+                    <div class="overlay_content">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing.
+                    </div>
+                    
+                </div>
+                
+                <!-- làm mờ hình -->
             </div>
-            <div class="image_works">
-                <img src="./images/over.jpg" alt="">
-                <div class="over_work">
-                    <img src="./images/over-work.jpg" alt="">
-                    <h5>트 리뉴얼 제작</h5>
+            <div class="gallery_item gallery_two">
+                <img src="./img/g2.jpg" alt="">
+                <div class="overlay">
+                    <h3>OUR GALLERY</h3>
+                    <div class="underline"></div>
+                    <div class="overlay_content">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing.
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container contact text-center">
-            <h3>Contact</h3>
-            <hr style="width: 24px; height: 1px; color: #4d4d4f;" />
-            <p>궁금한 사항이 있거나 디자인 의뢰를 원하시면 언제든지 연락주세요</p>
-            <p>Want to know more about us? Want to have awesome design?</p>
-            <p>Give us a call or drop us an email and we will get back to you as soon as we can</p>
-            <p class="lead"><strong>@theplane.co.kr</strong></p>
-            <p class="lead"><strong>+82.2.6497.4545</strong></p>
-            <button class="btn">Contact us</button>
+            <div class="gallery_item gallery_three">
+                <img src="./img/g3.jpg" alt="">
+                <div class="overlay">
+                    <h3>OUR GALLERY</h3>
+                    <div class="underline"></div>
+                    <div class="overlay_content">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing.
+                    </div>
+                </div>
+            </div>
+            <div class="gallery_item gallery_four">
+                <img src="./img/g4.jpg" alt="">
+                <div class="overlay">
+                    <h3>OUR GALLERY</h3>
+                    <div class="underline"></div>
+                    <div class="overlay_content">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing.
+                    </div>
+                </div>
+            </div>
+            <div class="gallery_item gallery_five">
+                <img src="./img/g5.jpg" alt="">
+                <div class="overlay">
+                    <h3>OUR GALLERY</h3>
+                    <div class="underline"></div>
+                    <div class="overlay_content">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing.
+                    </div>
+                </div>
+            </div>
+            <div class="gallery_item gallery_six">
+                <img src="./img/g6.jpg" alt="">
+                <div class="overlay">
+                    <h3>OUR GALLERY</h3>
+                    <div class="underline"></div>
+                    <div class="overlay_content">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing.
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="row social">
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-envelope-o"></i></a>
-                <a href=""><i class="fa fa-twitter"></i></a>
+    <!-- Bake -->
+    <section class="BakeTeam">
+        <div class="BakeTeam_content">
+            <h1>BAKE TEAM</h1>
+        </div>
+        <div class="BakeTeam_items">
+            <div class="BakeTeam_item BakeTeam_one">
+                <img src="./img/t1.jpg" alt="">
+                <div class="BakeTeam_intro">
+                    <h3>Jhon Shimon</h3>
+                    <p>- Cake Bake</p>
+                </div>
+                <div class="overlay overlay_2">
+                    <h3>Jhon Shimon</h3>
+                    <p>- Cake Bake</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, maiores.</p>
+                    <div class="button_group">
+                        <a href="">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="BakeTeam_item BakeTeam_two">
+                <img src="./img/t2.jpg" alt="">
+                <div class="BakeTeam_intro">
+                        <h3>Max Will</h3>
+                        <p>-Coffee Maker</p>
+                    </div>
+                    <div class="overlay overlay_2">
+                        <h3>Max Will</h3>
+                        <p>-Coffee Maker</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, maiores.</p>
+                        <div class="button_group">
+                            <a href="">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+            <div class="BakeTeam_item BakeTeam_three">
+                <img src="./img/t3.jpg" alt="">
+                <div class="BakeTeam_intro">
+                        <h3>Rose Murphy</h3>
+                        <p>-Staff Manager</p>
+                    </div>
+                    <div class="overlay overlay_2">
+                        <h3>Jhon Shimon</h3>
+                        <p>- Cake Bake</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, maiores.</p>
+                        <div class="button_group">
+                            <a href="">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+            <div class="BakeTeam_item BakeTeam_four">
+                <img src="./img/t4.jpg" alt="">
+                <div class="BakeTeam_intro">
+                        <h3>Barbara Will</h3>
+                        <p>-Cake Maker</p>
+                    </div>
+                    <div class="overlay overlay_2">
+                        <h3>Jhon Shimon</h3>
+                        <p>- Cake Bake</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, maiores.</p>
+                        <div class="button_group">
+                            <a href="">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+            <div class="BakeTeam_item BakeTeam_five">
+                <img src="./img/t1.jpg" alt="">
+                <div class="BakeTeam_intro">
+                        <h3>Derek Bybee</h3>
+                        <p>- Cake Bake</p>
+                    </div>
+                    <div class="overlay overlay_2">
+                        <h3>Jhon Shimon</h3>
+                        <p>- Cake Bake</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, maiores.</p>
+                        <div class="button_group">
+                            <a href="">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+            <div class="BakeTeam_item BakeTeam_six">
+                <img src="./img/t2.jpg" alt="">
+                <div class="BakeTeam_intro">
+                        <h3>Jhon Shimon</h3>
+                        <p>- Cake Bake</p>
+                    </div>
+                    <div class="overlay overlay_3">
+                        <h3>Jhon Shimon</h3>
+                        <p>- Cake Bake</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, maiores.</p>
+                        <div class="button_group">
+                            <a href="">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
             </div>
         </div>
-        <div class="copyright text-center">
-            <p>Copyright 2018 ⓒ plane convergence All rights Reserved.</p>
+    </section>
+    <!-- testiminoal -->
+    <section class="testiminal">
+        <div class="testiminal_content">
+            <h1>TESTIMONIALS</h1>
+            <div class="comment owl-carousel owl-theme">
+                <div class="comment_content">
+                    <p>
+                        <i class="fa fa-quote-left"></i>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat pariatur iste, maxime nesciunt quis
+                        reprehenderit eum, in fugit tenetur deserunt ad impedit quod assumenda, asperiores excepturi quisquam. Impedit,
+                        blanditiis earum!
+                        <i class="fa fa-quote-right"></i>
+                    </p>
+                    <p>Duc</p>
+                </div>
+                <div class="comment_content">
+                    <p>
+                        <i class="fa fa-quote-left"></i>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat pariatur iste, maxime nesciunt quis
+                        reprehenderit eum, in fugit tenetur deserunt ad impedit quod assumenda, asperiores excepturi quisquam. Impedit,
+                        blanditiis earum!
+                        <i class="fa fa-quote-right"></i>
+                    </p>
+                    <p>Mai</p>
+                </div>
+                <div class="comment_content">
+                    <p>
+                        <i class="fa fa-quote-left"></i>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat pariatur iste, maxime nesciunt quis
+                        reprehenderit eum, in fugit tenetur deserunt ad impedit quod assumenda, asperiores excepturi quisquam. Impedit,
+                        blanditiis earum!
+                        <i class="fa fa-quote-right"></i>
+                    </p>
+                    <p>My</p>
+                </div>
+            </div>
+        
         </div>
-    </footer>
-
-
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    </section>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="./js/jquery.counterup.min.js"></script>
+    <script>
+            jQuery(document).ready(function( $ ) {
+            $('.counterUp').counterUp({
+            delay: 10, // the delay time in ms
+            time: 3000 // the speed time in ms
+            });
+            });
+    </script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="./js/lightbox.min.js"></script>
+    <!-- contact -->
+    <section class="contact">
+        <div class="contact_content">
+            <h1>CONTACT</h1>
+            <div class="form_contact">
+                <form action="" method="POST">
+                    <!-- GET: show lên URL hết, khoảng 3000 ký tự, bookmark được . POST: ngược lại -->
+                    <div class="full_name">
+                        <div class="name">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="last_name">
+                            <input type="text" placeholder="Last_name">
+                        </div>
+                    </div>
+                    <div class="phone_email">
+                        <div class="phone">
+                            <input type="number" placeholder="Phone">
+                        </div>
+                        <div class="email">
+                            <input type="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="message">
+                        <textarea name="" rows="10" placeholder="Message"></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn btn--pink">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- map -->
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.440008697662!2d106.6632945148008!3d10.777572692320762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752edadeeba4f9%3A0x44a7f85173849a7c!2zNDU5IFPGsCBW4bqhbiBI4bqhbmgsIFBoxrDhu51uZyAxMiwgUXXhuq1uIDEwLCBI4buTIENow60gTWluaA!5e0!3m2!1sen!2s!4v1540026885689" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
 </body>
-
 </html>

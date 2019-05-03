@@ -1,0 +1,27 @@
+@media screen and (max-width: 768px){
+    .myNarBar_content{
+        width: 90%;
+    }
+    .myNarBar_content h1{
+        font-size: 25px;
+    }
+    .myNarBar_content ul{
+        padding-top: 10px;
+    }
+    .myNarBar_content ul li a{
+        font-size: 13px;
+    }
+    .row, .row1{
+        grid-template-columns: 1fr;
+        
+    }
+    .image{
+        height: 300px;
+    }
+    .item{
+        padding: 30px;
+    }
+    .static_content, .static_item{
+        width: 50%;
+    }
+}
